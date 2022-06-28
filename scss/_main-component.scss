@@ -1,0 +1,108 @@
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-component {
+  display: flex;
+  width: 60rem;
+  height: 45rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #fff;
+  color: #7d7e83;
+  img {
+    width: 30rem;
+  }
+  .product-info {
+    width: 50%;
+    margin: 3.2rem;
+    .category {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      letter-spacing: 0.65rem;
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+    }
+    .title {
+      font-family: "Fraunces", serif;
+      color: #000;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      line-height: 1;
+    }
+    .description {
+      line-height: 1.7;
+      margin-bottom: 3rem;
+      font-size: 1.3rem;
+    }
+    .price {
+      display: flex;
+      gap: 3rem;
+      margin-bottom: 3rem;
+      align-items: center;
+      .sale-price {
+        font-family: "Fraunces", serif;
+
+        font-size: 3rem;
+        font-weight: 700;
+        color: #408169;
+      }
+      .current-price {
+        color: #7d7e83;
+        text-decoration: line-through;
+        font-size: 1.2rem;
+      }
+    }
+    .btn:link,
+    .btn:active {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      display: inline-block;
+      transition: all 0.2s;
+      background-color: #408169;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-decoration: none;
+      &:hover {
+        background-color: #2b5747;
+      }
+      .cart {
+        width: 15px;
+        margin-right: 5px;
+      }
+    }
+    .btn:visited {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 35em) {
+  .cart {
+    display: none;
+  }
+  .main-component {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 61rem;
+    position: absolute;
+    img {
+      width: 35rem;
+      height: 23rem;
+    }
+    .product-info {
+      width: 85%;
+      margin: 2.3rem;
+      .category {
+        margin-bottom: 2.1rem;
+      }
+    }
+  }
+}
