@@ -11,8 +11,8 @@
   height: 45rem;
   overflow: hidden;
   border-radius: 1rem;
-  background-color: #fff;
-  color: #7d7e83;
+  background-color: var(--white);
+  color: var(--bg-gray);
   img {
     width: 30rem;
   }
@@ -28,7 +28,7 @@
     }
     .title {
       font-family: "Fraunces", serif;
-      color: #000;
+      color: var(--black);
       font-size: 3rem;
       margin-bottom: 3rem;
       line-height: 1;
@@ -48,10 +48,10 @@
 
         font-size: 3rem;
         font-weight: 700;
-        color: #408169;
+        color: var(--main-green-light);
       }
       .current-price {
-        color: #7d7e83;
+        color: var(--bg-gray);
         text-decoration: line-through;
         font-size: 1.2rem;
       }
@@ -65,12 +65,13 @@
       border-radius: 0.5rem;
       display: inline-block;
       transition: all 0.2s;
-      background-color: #408169;
+      background-color: var(--main-green-light);
       font-weight: 700;
       font-size: 1.2rem;
       text-decoration: none;
+      color: var(--white);
       &:hover {
-        background-color: #2b5747;
+        background-color: var(--main-green-dark);
       }
       .cart {
         width: 15px;
@@ -78,7 +79,7 @@
       }
     }
     .btn:visited {
-      color: #fff;
+      color: var(--white);
     }
   }
 }
